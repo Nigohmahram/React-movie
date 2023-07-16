@@ -15,15 +15,16 @@ body{
 .movies{
   justify-content: center;
   /* text-align: center; */
-  align-items: center;
+  /* align-items: center; */
   flex-wrap: wrap;
   display: flex;
+  flex-grow: 1;
   /* display: grid; */
-  /* grid-template-columns: repeat(auto-fill, minmax(250px 1fr)); */
+  grid-template-columns: repeat(auto-fill, minmax(250px 1fr));
   gap: 1rem;
 }
 .card{
-  width: 250px;
+  width: 240px;
   height: 510px;
 }
 
@@ -39,4 +40,13 @@ body{
   background-color: transparent;
   border-bottom: 2px solid #e4ccccd8;
 
+}
+.input-field {
+  display: flex;
+}
+.btn{
+  width: 200px;
+}
+label:not(:last-child) {
+  margin-right: 1rem;
 }
