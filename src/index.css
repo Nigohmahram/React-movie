@@ -1,0 +1,42 @@
+body{
+  background-color: #0f0f0fc4;
+}
+.header__nav{
+  background-color: rgb(4, 91, 98);
+  padding: 0 50px;
+}
+.content{
+  min-height: calc(100vh - 70px - 64px);
+}
+.page-footer{
+  background-color: rgb(4, 91, 98);
+  padding: 23.5px;
+}
+.movies{
+  justify-content: center;
+  /* text-align: center; */
+  align-items: center;
+  flex-wrap: wrap;
+  display: flex;
+  /* display: grid; */
+  /* grid-template-columns: repeat(auto-fill, minmax(250px 1fr)); */
+  gap: 1rem;
+}
+.card{
+  width: 250px;
+  height: 510px;
+}
+
+#email_inline{
+  border-bottom: 1px solid #e4ccccd8;
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+
+}
+#email_inline:focus{
+  background-color: transparent;
+  border-bottom: 2px solid #e4ccccd8;
+
+}
