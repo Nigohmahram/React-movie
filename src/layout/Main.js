@@ -12,8 +12,8 @@ export default class Main extends React.Component {
             .then(response => response.json())
             .then(data => this.setState({movies: data.Search}))
       }
-      searchMovies = (str) => {
-            fetch(`http://www.omdbapi.com/?apikey=3d094372&s=${str}`)
+      searchMovies = (str, type = 'all') => {
+            fetch(`http://www.omdbapi.com/?apikey=3d094372&s=${str}${type !== 'all' ? `&type=${type}` : ''}`)
             .then(response => response.json())
             .then(data => this.setState({movies: data.Search}))
       }
